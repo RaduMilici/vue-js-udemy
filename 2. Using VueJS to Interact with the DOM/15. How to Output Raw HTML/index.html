@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <h1 v-once>{{ title }}</h1>
+
+        <p>{{ sayHello() }}</p>
+
+        <p><a v-bind:href="link">link</a></p>
+
+        <hr>
+
+        <!--just outputs '<a href="https://google.com"></a>' as text-->
+        <!--<p>{{ finishedLink }}</p>-->
+
+        <p v-html="finishedLink"></p>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listening to Events</title>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ counter }}</p>
+        <button v-on:click="increase">click me</button>
+        <p v-on:mousemove="updateCoords">Hover to update coordinates {{ x }} / {{ y }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

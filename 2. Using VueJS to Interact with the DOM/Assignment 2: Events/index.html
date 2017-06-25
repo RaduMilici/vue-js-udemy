@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body>
+
+    <div id="exercise">
+        <!-- 1) Show an alert when the button gets clicked -->
+        <button v-on:click="showAlert">click for an alert</button>
+        <br>
+        <!-- 2) Listen to the keydown event and store the value in a data property -->
+        <input type="text" v-on:keyup="storeValue"> {{ inputText }}
+        <br>
+        <!-- 3) Adjust the example from 2) to only fire if the keyup is the ENTER key -->
+        <input type="text" v-on:keyup.enter="storeValue"> {{ inputText }}
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
