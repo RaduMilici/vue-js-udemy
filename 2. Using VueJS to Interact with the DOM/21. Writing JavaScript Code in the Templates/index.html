@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listening to Events</title>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ counter }}</p>
+
+        <button v-on:click="increase">click me</button>
+        <button v-on:click="counter *= 2;">double counter</button>
+        <p>{{ counter < 100 ? 'less than 100' : 'greater than 100' }}</p>
+
+        <p v-on:mousemove="updateCoords($event, 2)">
+            Hover to update (doubled) coordinates {{ x }} / {{ y }}
+            - <span v-on:mousemove.stop="">DEAD SPOT MODIFIER</span>
+        </p>
+
+        <h1>uses key modifiers to alert when pressing enter</h1>
+        <h1>more on key modifiers <a href="https://vuejs.org/v2/guide/events.html#Key-Modifiers">here</a></h1>
+        <input type="text" v-on:keyup.enter="alertMe">
+
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>can use @click instead of v-on:click</h1>
+        <h1>and :href instead of v-bind</h1>
+        <button @click="changeLink">change link</button>
+        <a target="_blank" :href="link.url">{{ link.name }}</a>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+</body>
+</html>

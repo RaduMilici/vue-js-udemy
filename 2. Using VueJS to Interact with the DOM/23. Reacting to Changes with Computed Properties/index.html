@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>methods called from the template get executed upon each UI update, computed properties only if necessary</h1>
+    <h1>read more <a target="_blank" href="https://vuejs.org/v2/guide/computed.html#Computed-Properties">here</a>.</h1>
+
+    <div id="app">
+        <button v-on:click="counter++">++</button>
+        <button v-on:click="counter--">--</button>
+        <button v-on:click="secondCounter++">second counter ++</button>
+        <p>counter {{ counter }}</p>
+        <p>second counter {{ secondCounter }}</p>
+        <p>{{ result() }} | {{ computedResult }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
