@@ -1,0 +1,15 @@
+.demo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+}
+
+.outline {
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.red   { background-color: red; }
+.green { background-color: green; }
+.blue  { background-color: blue; }

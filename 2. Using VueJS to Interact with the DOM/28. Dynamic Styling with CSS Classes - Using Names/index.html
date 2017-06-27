@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="demo"
+             :class="divClasses"
+             @click="attachRed = !attachRed"
+        ></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+
+        <hr>
+
+        <span>type a classss name here</span>
+        <input type="text" v-model="color">
+        <div class="demo" :class="[color, outline]"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+</body>
+</html>
