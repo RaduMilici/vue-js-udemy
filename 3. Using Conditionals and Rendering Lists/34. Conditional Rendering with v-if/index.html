@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1><a target="_blank" href="https://vuejs.org/v2/guide/conditional.html">Conditional Rendering</a></h1>
+    <h4>A v-else element must immediately follow a v-if or a v-else-if element - otherwise it will not be recognized.</h4>
+    <div id="app">
+        <p v-if="show">you can see this</p>
+        <p v-else>also see this?</p>
+
+        <button @click="toggleVisible">switch</button>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

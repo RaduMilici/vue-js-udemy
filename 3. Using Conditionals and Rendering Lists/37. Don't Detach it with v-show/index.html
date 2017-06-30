@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1><a target="_blank" href="https://vuejs.org/v2/guide/conditional.html#v-show">v-show</a></h1>
+    <h4>The difference is that an element with v-show will always be rendered and remain in the DOM; v-show simply toggles the display CSS property of the element.</h4>
+    <hr>
+
+    <div id="app">
+        <p v-show="show">you can see this</p>
+        <button @click="toggleVisible">switch</button>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

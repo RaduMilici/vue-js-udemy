@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1><a target="_blank" href="https://vuejs.org/v2/guide/conditional.html">Conditional Rendering</a></h1>
+    <h4>The HTML <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">&lt;template&gt;</a> element is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript.</h4>
+
+    <hr>
+
+    <div id="app">
+        <p v-if="show">you can see this</p>
+        <p v-else>also see this?</p>
+
+        <template v-if="show">
+            <h4>heading</h4>
+            <p>inside of template</p>
+        </template>
+
+        <button @click="toggleVisible">switch</button>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

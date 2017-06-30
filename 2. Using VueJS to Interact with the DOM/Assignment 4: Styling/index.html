@@ -2,46 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="exercise">
         <p>1) Start the Effect with the Button. The Effect should alternate the "highlight" or "shrink" class on each new setInterval tick (attach respective class to the div with id "effect" below)</p>
         <div>
-            <button @click="startEffect">Start Effect</button>
-            <div id="effect"></div>
+            <button @click="clickFunction">{{ effect.buttonText }}</button>
+            <div id="effect" :class="currentEffect"></div>
         </div>
         <hr>
         <!---->
         <p>2) Create a couple of CSS classes and attach them via the array syntax</p>
-        <div>I got no class :(</div>
+        <div :class="[arrClass.textDeco, {bold: effect.isRunning}]">I got no class :(</div>
         <hr>
         <!---->
         <p>3) Let the user enter a class (create some example classes) and attach it</p>
+        <p>bluePost / redPost</p>
         <div>
-            <input type="text">
-            <div></div>
+            <input type="text" v-model="inputClass.input">
+            <div :class="inputClass.input">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nam non officia optio perspiciatis sed similique vel veniam! A consequatur eos fuga hic iste nesciunt possimus quisquam quo totam?</div>
         </div>
         <hr>
         <!---->
         <p>4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes</p>
         <div>
-            <input type="text">
-            <input type="text">
-            <div></div>
+            <input type="text" v-model="inputClass.input" placeholder="class">
+            <input type="text" v-model="inputClass.boolVal" placeholder="true / false">
+            <div :class="[inputClass.input, {bold: isBold}]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis ea, esse exercitationem facere hic illo, libero nihil possimus praesentium quas sapiente unde, vel?</div>
         </div>
         <hr>
         <!---->
         <p>5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.</p>
         <div>
-            <input type="text">
-            <div></div>
+            <span>font size: </span><input type="number" v-model="inputClass.fontSize">
+            <div :style="{fontSize}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, autem commodi dicta dolorem eaque enim error explicabo, itaque molestiae nihil odit optio perferendis placeat quibusdam sequi soluta ullam voluptas voluptatibus.</div>
         </div>
         <hr>
         <!---->
         <p>6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button.</p>
         <div>
             <button v-on:click="startProgress">Start Progress</button>
-            <div></div>
+            <div class="progressBar" :style="{width: progressBarWidth}">{{ progressBarWidth }}</div>
         </div>
     </div><!--#exercise-->
 
