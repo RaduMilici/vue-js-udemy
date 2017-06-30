@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+    <div id="game" class="container">
+        <h4 v-if="winnerText">{{ winnerText }}</h4>
+
+        <div id="battle" class="clearfix" v-if="game" >
+            <div class="character" v-for="player in players">
+                <div class="name">
+                    <h4>{{ player.name }}</h4>
+                </div>
+                <div class="healthbar">
+                    <div class="healthbarProgress" :style="{width: getHpPercent(player)}">
+                        {{ player.health }}
+                    </div>
+                </div>
+            </div><!--character-->
+        </div><!--battle-->
+
+
+        <div class="panel">
+            <button v-if="!game" @click="newGame">new game</button>
+            <div v-else>
+                <button @click="game.attack()">attack</button>
+                <button @click="game.special()">special</button>
+                <button @click="game.heal()">heal</button>
+                <button @click="quit()">quit</button>
+            </div>
+        </div>
+
+        <div class="panel" v-if="game && game.combatLog.length">
+            <p v-for="(log, i) in game.combatLog"
+               class="combatLog"
+               :class="getLogClass(i)"
+            >{{ log }}</p>
+        </div>
+
+
+    </div><!--container-->
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#battle {
+    width: 100%
+}
+
+.character {
+    width: 45%;
+    text-align: center;
+    float: left;
+    margin: 0 2.5%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.healthbar {
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #ff8888;
+}
+
+.healthbarProgress {
+    height: 20px;
+    background-color: #ff0000;
+}
+
+.panel {
+    margin: 20px 0;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid black;
+    background-color: lightgray;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 25px;
+}
+
+.combatLog {
+    width: 100%;
+    background-color: lightslategray;
+}
+
+.playerLog {
+    background-color: lightblue;
+    color: blue;
+}
+
+.monsterLog {
+    background-color: #ff8888;
+    color: red;
+}
