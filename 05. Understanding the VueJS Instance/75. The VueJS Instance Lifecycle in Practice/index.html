@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+    <div id="app1">
+        <h4>Instance Lifecycle Hooks documentation <a target="_blank" :href="docsLink">here</a>.</h4>
+        <p>All hooks are logged to the console.</p>
+        <p>{{ title }}</p>
+
+        <button @click="title = 'changed'">update title</button>
+        <button @click="destroy">destroy</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

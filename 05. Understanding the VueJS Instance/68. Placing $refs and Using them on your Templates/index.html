@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+    <div id="app1">
+        <p>{{ sayHello() }}</p>
+    </div>
+
+    <div id="app2">
+        <p>{{ sayHello() }}</p>
+        <p>&lt;button @click="onChange" ref="myButton"&gt;change something in app1&lt;/button&gt;</p>
+        <button @click="onChange" ref="myButton">change something in app1</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

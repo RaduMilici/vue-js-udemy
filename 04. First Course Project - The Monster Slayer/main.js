@@ -29,14 +29,10 @@ class Character {
 
     takeDamage(num) {
         this.health -= num;
-        this.checkDeath();
 
-        if (this.health > this.maxHealth) {
-            this.health = this.maxHealth;
-        }
-        else {
+        this.health > this.maxHealth ?
+            this.health = this.maxHealth :
             this.checkDeath();
-        }
     }
 
     checkDeath() {
