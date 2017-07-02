@@ -1,19 +1,9 @@
 <template>
-    <div id="app">
-        <h1>server status: {{ status }}</h1>
-    </div>
+    <app-servers></app-servers>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                status: 'critical'
-            }
-        }
-    }
 </script>
 
 <style>
-
 </style>
