@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <JSCodeStyleSettings>
+          <option name="ALIGN_OBJECT_PROPERTIES" value="2" />
+        </JSCodeStyleSettings>
+        <TypeScriptCodeStyleSettings>
+          <option name="FORCE_SEMICOLON_STYLE" value="true" />
+          <option name="USE_DOUBLE_QUOTES" value="false" />
+          <option name="FORCE_QUOTE_STYlE" value="true" />
+          <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
+        </TypeScriptCodeStyleSettings>
+        <codeStyleSettings language="JavaScript">
+          <option name="LINE_COMMENT_ADD_SPACE" value="false" />
+          <indentOptions>
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="TypeScript">
+          <option name="LINE_COMMENT_AT_FIRST_COLUMN" value="true" />
+          <option name="LINE_COMMENT_ADD_SPACE" value="false" />
+        </codeStyleSettings>
+      </value>
+    </option>
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+  </component>
+</project>
